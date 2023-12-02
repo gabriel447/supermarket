@@ -30,6 +30,7 @@ erDiagram
       customer_cpf string 
       total_value double 
   }
+```
 
 ## Trechos de código
 
