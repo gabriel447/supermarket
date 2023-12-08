@@ -6,6 +6,7 @@ import dev.gabriel447.supermarket.entities.Product;
         import org.springframework.stereotype.Service;
 
         import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -15,6 +16,10 @@ public class ProductService {
     public List<Product> findAll() {
         List<Product> result = productRepository.findAll();
         return  result;
+    }
+
+    public Optional<Product> findById(Long id) {
+        return productRepository.findById(id);
     }
 
     public Product save(Product product) {
